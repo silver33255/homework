@@ -1,0 +1,3 @@
+CHAR_PATTERN = "\\b\\p{L}\\b"
+INT_PATTERN = "(^|\\s)([0-9]+)(?=$|\\s)"
+STRING_PATTERN = "(?<= |^)[à-ÿA-Z]"

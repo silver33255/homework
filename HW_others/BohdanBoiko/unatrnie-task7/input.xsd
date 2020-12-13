@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://bank-app.com"
+        xmlns:tns="http://bank-app.com"
+        elementFormDefault="qualified">
+    <element name="bank">
+        <complexType>
+            <sequence>
+                <element name="account" type="tns:account" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <complexType name="account">
+        <sequence>
+            <element name="name" type="string"/>
+            <element name="id">
+                <simpleType>
+                    <restriction base="integer">
+                        <pattern value="[0-9]{1,10}"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="depositor" type="string"/>
+            <element name="country" type="string"/>
+            <element name="valet" type="tns:valet" minOccurs="0" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
+
+    <complexType name="valet">
+        <all>
+            <element name="type">
+                <simpleType>
+                    <restriction base="string">
+                        <enumeration value="SAVINGS_BANK_VALET"/>
+                        <enumeration value="CURRENT_DEPOSIT_VALET"/>
+                        <enumeration value="FIXED_DEPOSIT_VALET"/>
+                        <enumeration value="RECURRING_DEPOSIT_VALET"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="amount" type="integer"/>
+            <element name="currency">
+                <simpleType>
+                    <restriction base="string">
+                        <pattern value="[A-Z]{3}"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="annualPercentage">
+                <simpleType>
+                    <restriction base="float">
+                        <minInclusive value="0"/>
+                        <maxInclusive value="100"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="depositTerm" type="dateTime"/>
+        </all>
+    </complexType>
+</schema>

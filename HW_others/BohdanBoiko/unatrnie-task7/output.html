@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Auctor | Sign Up</title>
+</head>
+<body>
+
+<div class="main">
+    <header>
+        <div class="wrapper">
+            <div class="head">
+                <a href="#" class="logo">Auctor</a>
+                <nav class="lang">
+                    <span class="lang-title"><span class="lang-title-text">eng</span><div class="lang-tr"></div></span>
+                    <ul class="lang-list hide">
+                        <li class="lang-list-item" th:text="test">eng</li>
+                        <li class="lang-list-item">rus</li>
+                        <li class="lang-list-item" th:text="test2">ukr</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div th:each="top : ts">
+        <h2 th:text="top"></h2>
+    </div>
+
+    <footer>
+        <div class="wrapper">
+            <div class="ft">
+                <ul class="ft-links">
+                    <li class="ft-links-item" th:if="bool2"><a href="#" th:text="test2">About us</a></li>
+                    <li class="ft-links-item" th:if="bool1"><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<div class="${class}">
+    <div class="block1"></div>
+    <div class="block2"></div>
+</div>
+</body>
+</html>

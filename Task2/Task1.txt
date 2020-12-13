@@ -1,0 +1,21 @@
+Input data (part1.txt)
+——————————————————
+Login;Name;Email
+ivanov;Ivan Ivanov;ivanov@mail.com
+петров;Петр Петров;petrov@google.com
+obama;Barack Obama;obama@google.com
+bush;Джордж Буш;bush@mail.com
+——————————————————
+
+Output of convert1
+——————————————————
+ivanov: ivanov@mail.com
+петров: petrov@google.com 
+obama: obama@google.com 
+bush: bush@mail.com 
+——————————————————
+
+Паттерн разделитель строк.
+Паттерн Логин.
+Паттерн ФИО.
+Паттерн Почта.

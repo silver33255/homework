@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<people>
+	<person>
+		<id>1</id>
+		<name>Alex</name>
+		<gender>Male</gender>
+		<pets>
+			<pet>
+				<pet-id>4</pet-id>
+				<pet-name>Santa</pet-name>
+				<pet-age>9</pet-age>
+			</pet>
+		</pets>
+	</person>
+	<person>
+		<id>2</id>
+		<name>Andr</name>
+		<gender>Male</gender>
+		<pets>
+			<pet>
+				<pet-id>5</pet-id>
+				<pet-name>Ribka</pet-name>
+				<pet-age>2</pet-age>
+			</pet>
+		</pets>
+	</person>
+	<person>
+		<id>3</id>
+		<name>Anna</name>
+		<gender>Female</gender>
+		<pets>
+			<pet>
+				<pet-id>4</pet-id>
+				<pet-name>Santa</pet-name>
+				<pet-age>9</pet-age>
+			</pet>
+		</pets>
+	</person>
+</people>

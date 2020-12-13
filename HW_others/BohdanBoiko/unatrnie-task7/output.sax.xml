@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bank xmlns="http://bank-app.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="input.xsd">
+    <account>
+        <name>PUMB</name>
+        <id>1</id>
+        <depositor>depositor</depositor>
+        <country>Ukraine</country>
+        <valet>
+            <type>FIXED_DEPOSIT_VALET</type>
+            <amount>544</amount>
+            <currency>EUR</currency>
+            <annualPercentage>10</annualPercentage>
+            <depositTerm>2032-05-06T09:00:00</depositTerm>
+        </valet>
+        <valet>
+            <type>RECURRING_DEPOSIT_VALET</type>
+            <amount>1204</amount>
+            <currency>USD</currency>
+            <annualPercentage>14</annualPercentage>
+            <depositTerm>2020-11-30T12:00:00</depositTerm>
+        </valet>
+        <valet>
+            <type>FIXED_DEPOSIT_VALET</type>
+            <amount>13643</amount>
+            <currency>XCD</currency>
+            <annualPercentage>20</annualPercentage>
+            <depositTerm>2026-01-03T18:30:00</depositTerm>
+        </valet>
+    </account>
+    <account>
+        <name>Alpha Bank</name>
+        <id>3</id>
+        <depositor>depositor</depositor>
+        <country>China</country>
+    </account>
+    <account>
+        <name>OTP Bank</name>
+        <id>0</id>
+        <depositor>depositor</depositor>
+        <country>Ukraine</country>
+        <valet>
+            <type>CURRENT_DEPOSIT_VALET</type>
+            <amount>54</amount>
+            <currency>UAH</currency>
+            <annualPercentage>5</annualPercentage>
+            <depositTerm>2002-05-30T09:00:00</depositTerm>
+        </valet>
+    </account>
+</bank>
